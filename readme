@@ -1,0 +1,26 @@
+<details>
+npm init  
+npm install express
+npm i -D nodemon 
+  "start": "node server.js",
+    "dev": "nodemon server.js"
+npm install dotenv  
+npm run dev
+npm i express-async-handler
+npm i express mongoose
+npm i bcrypt
+npm i jsonwebtoken
+//for full stack use handlebars
+//npm i mysql2
+
+#Instllation the following packages
+-cores
+-helmat
+-margan
+-compression
+-multer
+-glob(to compress api routes);
+jsonwebtoken
+{/* -bcrypt */}
+
+</details>
