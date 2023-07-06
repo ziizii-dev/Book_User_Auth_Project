@@ -19,6 +19,9 @@ npm i jsonwebtoken
 -margan
 -compression
 -multer
+
+-npm i glob
+
 -glob(to compress api routes);
 jsonwebtoken
 {/* -bcrypt */}

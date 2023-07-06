@@ -18,7 +18,7 @@ const register = (req, res) => {
     data.token = authToken;
 
     const query =
-        'insert into users (username,email,password,token) values (?,?,?,?)';
+        'INSERT INTO users (username,email,password,token) values (?,?,?,?)';
 
     db.execute(
         query,

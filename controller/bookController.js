@@ -1,7 +1,7 @@
 const db = require('../lib/db');
 
 const index = (req, res) => {
-    const query = 'select * from books where status = 1';
+    const query = 'SELECT * FROM books WHERE status = 1';
 
     try {
         db.execute(query, (err, result) => {
@@ -24,7 +24,7 @@ const index = (req, res) => {
 const store = (req, res) => {
 
     const query =
-        'insert into books (title,author,release_year) values (?,?,?)';
+        'INSERT INTO books (title,author,release_year) values (?,?,?)';
        
 
     db.execute(
@@ -54,7 +54,7 @@ const update = (req,res)=>{
     const query =
     'UPDATE books SET title = ?, author = ?, release_year = ? WHERE id = ?';
     db.execute(
-        query, [req.body.title, req.body.author,req.body.release_year, req.params.id], (err, results) =>{
+        query, [req.body.title, req.body.author,req.Ô.release_year, req.params.id], (err, results) =>{
             // return query;
             if(err){
                     console.error('Error updating data: ', err);
